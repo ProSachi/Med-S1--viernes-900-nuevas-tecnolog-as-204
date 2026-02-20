@@ -16,3 +16,9 @@ print(la_lista[2])
 
 for l in la_lista:
     print(f"Contenido: {l}")
+
+if la_lista > 0:
+    print("La lista tiene contenido")
+
+if la_lista:print("La lista tiene contenido")
+
