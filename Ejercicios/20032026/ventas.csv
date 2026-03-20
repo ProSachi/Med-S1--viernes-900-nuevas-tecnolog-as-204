@@ -1,0 +1,16 @@
+Fecha,Producto,Categoria,PrecioUnitario,UnidadesVendidas,Vendedor
+2025-08-01,Cafe Grano,Bebidas,45000,10,Ana
+2025-08-01,Croissant,Panaderia,7500,25,Luis
+2025-08-02,Jugo Naranja,bebidas,8000,15,Ana
+03/08/2025,Cafe Americano,Bebidas,5500,30,Carlos
+2025-08-03,Torta Chocolate,Postres,,8,Maria
+2025-08-04,Sandwich Pavo,Comidas,12000,12,Luis
+2025-08-05,Café Grano,Bebidas,45000,doce,Ana
+2025-08-06,Agua Mineral,Bebidas,3500,40,Carlos
+2025-08-06,Croissant,Panaderia,7500,22,Luis
+2025-08-07,Te Chai,Bebidas,6500,18,Maria
+2025-08-08,Muffin Arandano,panaderia,6800,20,
+2025-08-08,Cafe Americano,Bebidas,$5500,28,Carlos
+2025-08-09,Jugo Naranja,Bebidas,8000,16,Maria
+2025-08-10,Torta Chocolate,Postres,98000,7,Ana
+2025-08-10,Cafe Grano,Bebidas,4500000,1,Luis
