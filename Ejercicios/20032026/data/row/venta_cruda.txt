@@ -1,0 +1,6 @@
+id_venta,vendedor,edad,total_venta
+101,Juan,28,150.5
+102,Maria,,200.0
+103,Pedro,35,
+101,Juan,28,150.5
+105,Ana,22,300.2
