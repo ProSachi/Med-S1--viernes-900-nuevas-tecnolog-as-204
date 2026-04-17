@@ -1,0 +1,61 @@
+id_cliente,nombre,edad,ciudad,email,fecha_registro,salario,activo,puntaje,telefono,comentarios
+1,Ana Perez,23,Bogota,ana.perez@mail.com,2026-01-15,2500000,Si,88,3001234567,cliente nuevo
+2,Luis Gomez,35,Medellin,luis.gomez@mail.com,15/02/2026,3200000,No,91,3012345678,compra frecuente
+3,Camila Ruiz,29,Cali,camila.ruiz@mail,2026/03/10,2800000,si,95,3023456789,email invalido
+4,Juan Diaz,,Barranquilla,juan.diaz@mail.com,2026-02-30,3100000,No,84,3034567890,fecha invalida
+5,Sofia Torres,42,bogota ,sofia.torres@mail.com,2026-01-20,4500000,SI,89,3045678901,espacio en ciudad
+6,Mateo Rios,18,Medellin,mateo.rios@mail.com,2026-01-25,1200000,1,77,3056789012,activo como numero
+7,Valeria Castro,veinte,Cali,valeria.castro@mail.com,2026-01-28,2000000,No,82,3067890123,edad en texto
+8,Andres Mora,31,,andres.mora@mail.com,2026-02-02,2900000,Si,90,,ciudad faltante
+9,Daniela Leon,27,Bucaramanga,daniela.leon@mail.com,2026-02-05,0,No,86,3078901234,salario cero
+10,Pedro Salas,54,Pereira,pedro.salas@mail.com,2026-02-08,6700000,Si,101,3089012345,puntaje fuera de rango
+11,Laura Nino,33,Cucuta,laura.nino@mail.com,08-02-2026,3600000,No,79,3090123456,formato fecha distinto
+12,Carlos Vega,45,Bogota,carlos.vega@mail.com,2026-02-12,-1500000,No,74,3101234567,salario negativo
+13,Paula Arias,26,Cali,paula.arias@mail.com,2026-02-15,2.900.000,Si,92,3112345678,salario con puntos
+14,Diego Pardo,39,Cartagena,diego.pardo@mail.com,2026-02-18,3900000,No,85,3123456789,ok
+15,Mariana Soto,22,Medellin,mariana.soto@mail.com,2026-02-21,1800000,Si,,3134567890,puntaje faltante
+16,Nicolas Gil,28,Bogota,nicolas.gil@mail.com,2026-02-24,2700000,No,88,3145678901,ok
+17,Juliana C,41,Cali,juliana.c@mail.com,2026-02-26,4100000,No,87,3156789012,nombre abreviado
+18,Sebastian R,31,Manizales,sebastian.r@mail.com,2026-03-01,3050000,Si,83,3167890123,ok
+19,Andrea M,36,Barranquilla,andrea.m@mail.com,2026-03-03,3550000,No,80,3178901234,ok
+20,Felipe O,30,Bogota,felipe.o@mail.com,2026-03-05,2950000,si,78,3189012345,activo minuscula
+21,Paula Arias,26,Cali,paula.arias@mail.com,2026-02-15,2900000,Si,92,3112345678,registro duplicado
+22,Oscar P,52,Ibague,oscar.p@mail.com,2026-03-08,5200000,No,76,3190123456,ok
+23,Carolina Q,24,Neiva,carolina.q@mail.com,2026-03-10,2100000,Si,89,3201234567,ok
+24,Brayan T,19,Soacha,brayan.t@mail.com,2026-03-12,1300000,No,65,3212345678,ok
+25,Patricia U,47,Bogota,patricia.u@mail.com,2026-03-14,4700000,Si,93,3223456789,ok
+26,Gerardo V,58,Cali,gerardo.v@mail.com,2026-03-16,5800000,No,72,3234567890,ok
+27,Monica W,34,Pasto,monica.w@mail.com,2026-03-18,3400000,Si,81,3245678901,ok
+28,Ricardo X,27,Bogota,ricardo.x@mail.com,2026-03-20,2750000,No,85,3256789012,ok
+29,Yuli Y,29,Cali,yuli.y@mail.com,2026-03-22,2850000,Si,88,3267890123,ok
+30,Zoe Z,21,Medellin,zoe.z@mail.com,2026-03-24,1900000,No,90,3278901234,ok
+31,Kevin A,32,Medellin,kevin.a@mail.com,2026-03-26,3200000,Si,84,3289012345,ok
+32,Natalia B,25,Bogota,natalia.b@mail.com,2026-03-28,2500000,No,87,3290123456,ok
+33,Esteban C,38,Cali,esteban.c@mail.com,2026-03-30,3800000,Si,82,3301234567,ok
+34,Daniel D,44,Bogota,daniel.d@mail.com,2026-04-01,4400000,No,79,3312345678,ok
+35,Gloria E,50,Cucuta,gloria.e@mail.com,2026-04-03,5000000,Si,91,3323456789,ok
+36,Hector F,37,Bucaramanga,hector.f@mail.com,2026-04-05,3700000,No,77,3334567890,ok
+37,Ines G,46,Cali,ines.g@mail.com,2026-04-07,4600000,Si,88,3345678901,ok
+38,Jorge H,53,Medellin,jorge.h@mail.com,2026-04-09,5300000,No,73,3356789012,ok
+39,Karina I,20,Bogota,karina.i@mail.com,2026-04-11,2000000,Si,86,3367890123,ok
+40,Leon J,40,Cali,leon.j@mail.com,2026-04-13,4000000,No,80,3378901234,ok
+41,Marcos K,-5,Pereira,marcos.k@mail.com,2026-04-15,2600000,Si,75,3389012345,edad negativa
+42,Nora L,200,Bogota,nora.l@mail.com,2026-04-17,3000000,No,82,3390123456,edad fuera de rango
+43,Olga M,33,N/A,olga.m@mail.com,2026-04-19,3300000,Si,84,3401234567,ciudad no valida
+44,Pablo N,31,Cali,pablo.n@@mail.com,2026-04-21,3100000,No,83,3412345678,email mal formado
+45,Quique O,29,Medellin,quique.o@mail.com,2026-04-23,"$2,900,000",Si,85,3423456789,salario con simbolo
+46,Rosa P,27,Bogota,rosa.p@mail.com,2026-04-25,2700000,No,88,abc123,telefono invalido
+47,Sergio Q,36,Cali,sergio.q@mail.com,2026-04-27,3600000,Si,90,3434567890,ok
+48,Tatiana R,34,Barranquilla,tatiana.r@mail.com,2026-04-29,3400000,No,87,3445678901,ok
+49,Uriel S,28,Medellin,uriel.s@mail.com,2026-05-01,2800000,Si,89,3456789012,ok
+50,Viviana T,31,Bógota,viviana.t@mail.com,2026-05-03,3100000,No,86,3467890123,ok
+51,Walter U,45,Cali,walter.u@mail.com,2026-05-05,4500000,Si,83,3478901234,ok
+52,Ximena V,23,Medellin,ximena.v@mail.com,2026-05-07,2300000,No,92,3489012345,ok
+53,Yahir W,26,Bogotá,yahir.w@mail.com,2026-05-09,2600000,Si,85,3490123456,ok
+54,Zulema X,39,Cali,zulema.x@mail.com,2026-05-11,3900000,No,81,3501234567,ok
+55,Alvaro Y,41,Medellin,alvaro.y@mail.com,2026-05-13,4100000,Si,88,3512345678,ok
+56,Bianca Z,24,Bogóta,bianca.z@mail.com,2026-05-15,2400000,No,90,3523456789,ok
+57,Cesar AA,35,Cali,cesar.aa@mail.com,2026-05-17,3500000,Si,84,3534567890,ok
+58,Diana AB,30,Medellin,diana.ab@mail.com,2026-05-19,3000000,No,87,3545678901,ok
+59,Elkin AC,28,Bogota,elkin.ac@mail.com,2026-05-21,2800000,Si,89,3556789012,ok
+60,Fabiana AD,32,Cali,fabiana.ad@mail.com,2026-05-23,3200000,No,86,3567890123,ok

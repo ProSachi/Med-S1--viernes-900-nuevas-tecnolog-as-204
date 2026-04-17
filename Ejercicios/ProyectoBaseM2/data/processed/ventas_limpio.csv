@@ -1,0 +1,69 @@
+id_venta,id_cliente,fecha_venta,producto,categoria,cantidad,precio_unitario,total,canal,metodo_pago
+V001,1,2026-04-01,Mouse Inalambrico,Tecnologia,2,65000,130000,Online,Tarjeta
+V002,2,2026-04-01,Teclado Mecanico,Tecnologia,1,180000,180000,Tienda,Efectivo
+V003,3,2026-04-02,Silla Ergonomica,Hogar,1,520000,520000,Online,Transferencia
+V004,4,2026-04-02,Monitor 24,Tecnologia,1,780000,780000,Online,Tarjeta
+V005,5,2026-04-03,Cafetera,Hogar,1,240000,240000,Tienda,Efectivo
+V006,6,2026-04-03,Memoria USB 64GB,Tecnologia,3,45000,135000,Online,Tarjeta
+V007,7,2026-04-04,Cuaderno Pack x5,Papeleria,2,28000,56000,Tienda,Efectivo
+V008,8,2026-04-04,Lapiceros Pack x10,Papeleria,1,18000,18000,Tienda,Efectivo
+V009,9,2026-04-05,Audifonos Bluetooth,Tecnologia,1,220000,220000,Online,Tarjeta
+V010,10,2026-04-05,Mochila Escolar,Accesorios,1,125000,125000,Tienda,Transferencia
+V011,11,2026-04-06,Impresora Multifuncional,Tecnologia,1,690000,690000,Online,Tarjeta
+V012,12,2026-04-06,Resma Carta x5,Papeleria,2,34000,68000,Tienda,Efectivo
+V013,13,2026-04-07,Calculadora Cientifica,Papeleria,1,95000,95000,Online,Tarjeta
+V014,14,2026-04-07,Escritorio,Hogar,1,430000,430000,Tienda,Transferencia
+V015,15,2026-04-08,Lampara LED,Hogar,2,39000,78000,Online,Efectivo
+V016,16,2026-04-08,Webcam HD,Tecnologia,1,210000,210000,Online,Tarjeta
+V017,17,2026-04-09,Agenda 2026,Papeleria,1,32000,32000,Tienda,Efectivo
+V018,18,2026-04-09,Disco SSD 1TB,Tecnologia,1,450000,450000,Online,Transferencia
+V019,19,2026-04-10,Router WiFi,Tecnologia,1,260000,260000,Tienda,Tarjeta
+V020,20,2026-04-10,Botella Termica,Accesorios,2,45000,90000,Online,Efectivo
+V021,21,2026-04-11,Portatil 14,Tecnologia,1,2450000,2450000,Online,Transferencia
+V022,22,2026-04-11,Base Refrigerante,Tecnologia,1,85000,85000,Tienda,Efectivo
+V023,23,2026-04-12,Grapadora,Papeleria,1,22000,22000,Tienda,Efectivo
+V024,24,2026-04-12,Mouse Pad XL,Accesorios,2,25000,50000,Online,Tarjeta
+V025,25,2026-04-13,Celular Gama Media,Tecnologia,1,1350000,1350000,Online,Tarjeta
+V026,26,2026-04-13,Cargador Rapido,Tecnologia,1,70000,70000,Tienda,Efectivo
+V027,27,2026-04-14,Biblioteca Modular,Hogar,1,620000,620000,Tienda,Transferencia
+V028,28,2026-04-14,Tablet 10,Tecnologia,1,980000,980000,Online,Tarjeta
+V029,29,2026-04-15,Marcadores Pack x12,Papeleria,1,26000,26000,Tienda,Efectivo
+V030,30,2026-04-15,Regla Metalica,Papeleria,3,7000,21000,Tienda,Efectivo
+V031,31,2026-04-16,UPS 1200VA,Tecnologia,1,540000,540000,Online,Transferencia
+V032,32,2026-04-16,Cable HDMI 2m,Tecnologia,2,28000,56000,Tienda,Tarjeta
+V033,33,2026-04-17,Organizador de Escritorio,Hogar,1,68000,68000,Online,Efectivo
+V034,34,2026-04-17,Switch 8 Puertos,Tecnologia,1,160000,160000,Tienda,Tarjeta
+V035,35,2026-04-18,Proyector,Tecnologia,1,1250000,1250000,Online,Transferencia
+V036,36,2026-04-18,Memoria RAM 16GB,Tecnologia,1,290000,290000,Online,Tarjeta
+V037,37,2026-04-19,Silla Oficina,Hogar,1,480000,480000,Tienda,Transferencia
+V038,38,2026-04-19,Parlante Bluetooth,Tecnologia,1,175000,175000,Online,Efectivo
+V039,39,2026-04-20,Cuaderno Argollado,Papeleria,4,12000,48000,Tienda,Efectivo
+V040,40,2026-04-20,Power Bank 10000mAh,Tecnologia,1,110000,110000,Online,Tarjeta
+V041,41,2026-04-21,Teclado Inalambrico,Tecnologia,1,145000,145000,Tienda,Tarjeta
+V042,42,2026-04-21,Set de Oficina,Papeleria,1,89000,89000,Online,Efectivo
+V043,43,2026-04-22,Mouse Vertical,Tecnologia,1,99000,99000,Online,Tarjeta
+V044,44,2026-04-22,Aro de Luz,Accesorios,1,76000,76000,Tienda,Efectivo
+V045,45,2026-04-23,Esferos Gel Pack x6,Papeleria,2,15000,30000,Tienda,Efectivo
+V046,46,2026-04-23,Camara Web Full HD,Tecnologia,1,260000,260000,Online,Transferencia
+V047,47,2026-04-24,SSD Externo 512GB,Tecnologia,1,320000,320000,Online,Tarjeta
+V048,48,2026-04-24,Mesa Plegable,Hogar,1,210000,210000,Tienda,Efectivo
+V049,49,2026-04-25,Lapiz Optico,Tecnologia,1,135000,135000,Online,Tarjeta
+V050,50,2026-04-25,Hub USB-C,Tecnologia,1,115000,115000,Tienda,Tarjeta
+V051,51,2026-04-26,Calculadora Basica,Papeleria,2,28000,56000,Tienda,Efectivo
+V052,52,2026-04-26,Monitor 27,Tecnologia,1,980000,980000,Online,Transferencia
+V053,53,2026-04-27,Tinta Impresora,Tecnologia,2,65000,130000,Tienda,Efectivo
+V054,54,2026-04-27,Archivador,Papeleria,1,74000,74000,Tienda,Efectivo
+V055,55,2026-04-28,Smartwatch,Tecnologia,1,560000,560000,Online,Tarjeta
+V056,56,2026-04-28,Soporte Portatil,Accesorios,1,48000,48000,Online,Efectivo
+V057,57,2026-04-29,Microfono USB,Tecnologia,1,230000,230000,Tienda,Transferencia
+V058,58,2026-04-29,Silla Gamer,Hogar,1,890000,890000,Online,Tarjeta
+V059,59,2026-04-30,Cuaderno Ejecutivo,Papeleria,1,34000,34000,Tienda,Efectivo
+V060,60,2026-04-30,Laptop Stand,Accesorios,1,95000,95000,Online,Efectivo
+V061,3,2026-05-01,Webcam HD,Tecnologia,1,210000,210000,Online,Tarjeta
+V062,10,2026-05-01,Audifonos Bluetooth,Tecnologia,1,220000,220000,Tienda,Efectivo
+V063,21,2026-05-02,Mouse Inalambrico,Tecnologia,1,65000,65000,Online,Tarjeta
+V064,35,2026-05-02,Cuaderno Pack x5,Papeleria,1,28000,28000,Tienda,Efectivo
+V065,47,2026-05-03,Cargador Rapido,Tecnologia,2,70000,140000,Online,Transferencia
+V066,52,2026-05-03,Power Bank 10000mAh,Tecnologia,1,110000,110000,Tienda,Tarjeta
+V067,58,2026-05-04,Lampara LED,Hogar,3,39000,117000,Online,Efectivo
+V068,60,2026-05-04,Marcadores Pack x12,Papeleria,2,26000,52000,Tienda,Efectivo

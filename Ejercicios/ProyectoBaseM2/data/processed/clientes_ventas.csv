@@ -1,0 +1,69 @@
+id_venta,id_cliente,fecha_venta,producto,categoria,cantidad,precio_unitario,total,canal,metodo_pago,nombre,edad,ciudad,email,fecha_registro,salario,activo,puntaje,telefono,comentarios
+V001,1,2026-04-01,Mouse Inalambrico,Tecnologia,2,65000,130000,Online,Tarjeta,Ana Perez,23.0,Bogota,Ana.Perez@Mail.Com,2026-01-15,2500000.0,Si,88.0,3001234567,cliente nuevo
+V002,2,2026-04-01,Teclado Mecanico,Tecnologia,1,180000,180000,Tienda,Efectivo,Luis Gomez,35.0,Medellin,Luis.Gomez@Mail.Com,15/02/2026,3200000.0,No,91.0,3012345678,compra frecuente
+V003,3,2026-04-02,Silla Ergonomica,Hogar,1,520000,520000,Online,Transferencia,Camila Ruiz,29.0,Cali,Camila.Ruiz@Mail,2026/03/10,2800000.0,Si,95.0,3023456789,email invalido
+V004,4,2026-04-02,Monitor 24,Tecnologia,1,780000,780000,Online,Tarjeta,Juan Diaz,32.4,Barranquilla,Juan.Diaz@Mail.Com,2026-02-30,3100000.0,No,84.0,3034567890,fecha invalida
+V005,5,2026-04-03,Cafetera,Hogar,1,240000,240000,Tienda,Efectivo,Sofia Torres,42.0,Bogota,Sofia.Torres@Mail.Com,2026-01-20,4500000.0,Si,89.0,3045678901,espacio en ciudad
+V006,6,2026-04-03,Memoria USB 64GB,Tecnologia,3,45000,135000,Online,Tarjeta,Mateo Rios,18.0,Medellin,Mateo.Rios@Mail.Com,2026-01-25,1200000.0,1,77.0,3056789012,activo como numero
+V007,7,2026-04-04,Cuaderno Pack x5,Papeleria,2,28000,56000,Tienda,Efectivo,Valeria Castro,20.0,Cali,Valeria.Castro@Mail.Com,2026-01-28,2000000.0,No,82.0,3067890123,edad en texto
+V008,8,2026-04-04,Lapiceros Pack x10,Papeleria,1,18000,18000,Tienda,Efectivo,Andres Mora,31.0,Bogota,Andres.Mora@Mail.Com,2026-02-02,2900000.0,Si,90.0,0,ciudad faltante
+V009,9,2026-04-05,Audifonos Bluetooth,Tecnologia,1,220000,220000,Online,Tarjeta,Daniela Leon,27.0,Bucaramanga,Daniela.Leon@Mail.Com,2026-02-05,0.0,No,86.0,3078901234,salario cero
+V010,10,2026-04-05,Mochila Escolar,Accesorios,1,125000,125000,Tienda,Transferencia,Pedro Salas,54.0,Pereira,Pedro.Salas@Mail.Com,2026-02-08,6700000.0,Si,101.0,3089012345,puntaje fuera de rango
+V011,11,2026-04-06,Impresora Multifuncional,Tecnologia,1,690000,690000,Online,Tarjeta,Laura Nino,33.0,Cucuta,Laura.Nino@Mail.Com,08-02-2026,3600000.0,No,79.0,3090123456,formato fecha distinto
+V012,12,2026-04-06,Resma Carta x5,Papeleria,2,34000,68000,Tienda,Efectivo,Carlos Vega,45.0,Bogota,Carlos.Vega@Mail.Com,2026-02-12,-1500000.0,No,74.0,3101234567,salario negativo
+V013,13,2026-04-07,Calculadora Cientifica,Papeleria,1,95000,95000,Online,Tarjeta,Paula Arias,26.0,Cali,Paula.Arias@Mail.Com,2026-02-15,0.0,Si,92.0,3112345678,salario con puntos
+V014,14,2026-04-07,Escritorio,Hogar,1,430000,430000,Tienda,Transferencia,Diego Pardo,39.0,Cartagena,Diego.Pardo@Mail.Com,2026-02-18,3900000.0,No,85.0,3123456789,ok
+V015,15,2026-04-08,Lampara LED,Hogar,2,39000,78000,Online,Efectivo,Mariana Soto,22.0,Medellin,Mariana.Soto@Mail.Com,2026-02-21,1800000.0,Si,84.76271186440678,3134567890,puntaje faltante
+V016,16,2026-04-08,Webcam HD,Tecnologia,1,210000,210000,Online,Tarjeta,Nicolas Gil,28.0,Bogota,Nicolas.Gil@Mail.Com,2026-02-24,2700000.0,No,88.0,3145678901,ok
+V017,17,2026-04-09,Agenda 2026,Papeleria,1,32000,32000,Tienda,Efectivo,Juliana C,41.0,Cali,Juliana.C@Mail.Com,2026-02-26,4100000.0,No,87.0,3156789012,nombre abreviado
+V018,18,2026-04-09,Disco SSD 1TB,Tecnologia,1,450000,450000,Online,Transferencia,Sebastian R,31.0,Manizales,Sebastian.R@Mail.Com,2026-03-01,3050000.0,Si,83.0,3167890123,ok
+V019,19,2026-04-10,Router WiFi,Tecnologia,1,260000,260000,Tienda,Tarjeta,Andrea M,36.0,Barranquilla,Andrea.M@Mail.Com,2026-03-03,3550000.0,No,80.0,3178901234,ok
+V020,20,2026-04-10,Botella Termica,Accesorios,2,45000,90000,Online,Efectivo,Felipe O,30.0,Bogota,Felipe.O@Mail.Com,2026-03-05,2950000.0,Si,78.0,3189012345,activo minuscula
+V021,21,2026-04-11,Portatil 14,Tecnologia,1,2450000,2450000,Online,Transferencia,Paula Arias,26.0,Cali,Paula.Arias@Mail.Com,2026-02-15,2900000.0,Si,92.0,3112345678,registro duplicado
+V022,22,2026-04-11,Base Refrigerante,Tecnologia,1,85000,85000,Tienda,Efectivo,Oscar P,52.0,Ibague,Oscar.P@Mail.Com,2026-03-08,5200000.0,No,76.0,3190123456,ok
+V023,23,2026-04-12,Grapadora,Papeleria,1,22000,22000,Tienda,Efectivo,Carolina Q,24.0,Neiva,Carolina.Q@Mail.Com,2026-03-10,2100000.0,Si,89.0,3201234567,ok
+V024,24,2026-04-12,Mouse Pad XL,Accesorios,2,25000,50000,Online,Tarjeta,Brayan T,19.0,Soacha,Brayan.T@Mail.Com,2026-03-12,1300000.0,No,65.0,3212345678,ok
+V025,25,2026-04-13,Celular Gama Media,Tecnologia,1,1350000,1350000,Online,Tarjeta,Patricia U,47.0,Bogota,Patricia.U@Mail.Com,2026-03-14,4700000.0,Si,93.0,3223456789,ok
+V026,26,2026-04-13,Cargador Rapido,Tecnologia,1,70000,70000,Tienda,Efectivo,Gerardo V,58.0,Cali,Gerardo.V@Mail.Com,2026-03-16,5800000.0,No,72.0,3234567890,ok
+V027,27,2026-04-14,Biblioteca Modular,Hogar,1,620000,620000,Tienda,Transferencia,Monica W,34.0,Pasto,Monica.W@Mail.Com,2026-03-18,3400000.0,Si,81.0,3245678901,ok
+V028,28,2026-04-14,Tablet 10,Tecnologia,1,980000,980000,Online,Tarjeta,Ricardo X,27.0,Bogota,Ricardo.X@Mail.Com,2026-03-20,2750000.0,No,85.0,3256789012,ok
+V029,29,2026-04-15,Marcadores Pack x12,Papeleria,1,26000,26000,Tienda,Efectivo,Yuli Y,29.0,Cali,Yuli.Y@Mail.Com,2026-03-22,2850000.0,Si,88.0,3267890123,ok
+V030,30,2026-04-15,Regla Metalica,Papeleria,3,7000,21000,Tienda,Efectivo,Zoe Z,21.0,Medellin,Zoe.Z@Mail.Com,2026-03-24,1900000.0,No,90.0,3278901234,ok
+V031,31,2026-04-16,UPS 1200VA,Tecnologia,1,540000,540000,Online,Transferencia,Kevin A,32.0,Medellin,Kevin.A@Mail.Com,2026-03-26,3200000.0,Si,84.0,3289012345,ok
+V032,32,2026-04-16,Cable HDMI 2m,Tecnologia,2,28000,56000,Tienda,Tarjeta,Natalia B,25.0,Bogota,Natalia.B@Mail.Com,2026-03-28,2500000.0,No,87.0,3290123456,ok
+V033,33,2026-04-17,Organizador de Escritorio,Hogar,1,68000,68000,Online,Efectivo,Esteban C,38.0,Cali,Esteban.C@Mail.Com,2026-03-30,3800000.0,Si,82.0,3301234567,ok
+V034,34,2026-04-17,Switch 8 Puertos,Tecnologia,1,160000,160000,Tienda,Tarjeta,Daniel D,44.0,Bogota,Daniel.D@Mail.Com,2026-04-01,4400000.0,No,79.0,3312345678,ok
+V035,35,2026-04-18,Proyector,Tecnologia,1,1250000,1250000,Online,Transferencia,Gloria E,50.0,Cucuta,Gloria.E@Mail.Com,2026-04-03,5000000.0,Si,91.0,3323456789,ok
+V036,36,2026-04-18,Memoria RAM 16GB,Tecnologia,1,290000,290000,Online,Tarjeta,Hector F,37.0,Bucaramanga,Hector.F@Mail.Com,2026-04-05,3700000.0,No,77.0,3334567890,ok
+V037,37,2026-04-19,Silla Oficina,Hogar,1,480000,480000,Tienda,Transferencia,Ines G,46.0,Cali,Ines.G@Mail.Com,2026-04-07,4600000.0,Si,88.0,3345678901,ok
+V038,38,2026-04-19,Parlante Bluetooth,Tecnologia,1,175000,175000,Online,Efectivo,Jorge H,53.0,Medellin,Jorge.H@Mail.Com,2026-04-09,5300000.0,No,73.0,3356789012,ok
+V039,39,2026-04-20,Cuaderno Argollado,Papeleria,4,12000,48000,Tienda,Efectivo,Karina I,20.0,Bogota,Karina.I@Mail.Com,2026-04-11,2000000.0,Si,86.0,3367890123,ok
+V040,40,2026-04-20,Power Bank 10000mAh,Tecnologia,1,110000,110000,Online,Tarjeta,Leon J,40.0,Cali,Leon.J@Mail.Com,2026-04-13,4000000.0,No,80.0,3378901234,ok
+V041,41,2026-04-21,Teclado Inalambrico,Tecnologia,1,145000,145000,Tienda,Tarjeta,Marcos K,20.0,Pereira,Marcos.K@Mail.Com,2026-04-15,2600000.0,Si,75.0,3389012345,edad negativa
+V042,42,2026-04-21,Set de Oficina,Papeleria,1,89000,89000,Online,Efectivo,Nora L,20.0,Bogota,Nora.L@Mail.Com,2026-04-17,3000000.0,No,82.0,3390123456,edad fuera de rango
+V043,43,2026-04-22,Mouse Vertical,Tecnologia,1,99000,99000,Online,Tarjeta,Olga M,33.0,Bogota,Olga.M@Mail.Com,2026-04-19,3300000.0,Si,84.0,3401234567,ciudad no valida
+V044,44,2026-04-22,Aro de Luz,Accesorios,1,76000,76000,Tienda,Efectivo,Pablo N,31.0,Cali,Pablo.N@@Mail.Com,2026-04-21,3100000.0,No,83.0,3412345678,email mal formado
+V045,45,2026-04-23,Esferos Gel Pack x6,Papeleria,2,15000,30000,Tienda,Efectivo,Quique O,29.0,Medellin,Quique.O@Mail.Com,2026-04-23,2900000.0,Si,85.0,3423456789,salario con simbolo
+V046,46,2026-04-23,Camara Web Full HD,Tecnologia,1,260000,260000,Online,Transferencia,Rosa P,27.0,Bogota,Rosa.P@Mail.Com,2026-04-25,2700000.0,No,88.0,0,telefono invalido
+V047,47,2026-04-24,SSD Externo 512GB,Tecnologia,1,320000,320000,Online,Tarjeta,Sergio Q,36.0,Cali,Sergio.Q@Mail.Com,2026-04-27,3600000.0,Si,90.0,3434567890,ok
+V048,48,2026-04-24,Mesa Plegable,Hogar,1,210000,210000,Tienda,Efectivo,Tatiana R,34.0,Barranquilla,Tatiana.R@Mail.Com,2026-04-29,3400000.0,No,87.0,3445678901,ok
+V049,49,2026-04-25,Lapiz Optico,Tecnologia,1,135000,135000,Online,Tarjeta,Uriel S,28.0,Medellin,Uriel.S@Mail.Com,2026-05-01,2800000.0,Si,89.0,3456789012,ok
+V050,50,2026-04-25,Hub USB-C,Tecnologia,1,115000,115000,Tienda,Tarjeta,Viviana T,31.0,Bogota,Viviana.T@Mail.Com,2026-05-03,3100000.0,No,86.0,3467890123,ok
+V051,51,2026-04-26,Calculadora Basica,Papeleria,2,28000,56000,Tienda,Efectivo,Walter U,45.0,Cali,Walter.U@Mail.Com,2026-05-05,4500000.0,Si,83.0,3478901234,ok
+V052,52,2026-04-26,Monitor 27,Tecnologia,1,980000,980000,Online,Transferencia,Ximena V,23.0,Medellin,Ximena.V@Mail.Com,2026-05-07,2300000.0,No,92.0,3489012345,ok
+V053,53,2026-04-27,Tinta Impresora,Tecnologia,2,65000,130000,Tienda,Efectivo,Yahir W,26.0,Bogota,Yahir.W@Mail.Com,2026-05-09,2600000.0,Si,85.0,3490123456,ok
+V054,54,2026-04-27,Archivador,Papeleria,1,74000,74000,Tienda,Efectivo,Zulema X,39.0,Cali,Zulema.X@Mail.Com,2026-05-11,3900000.0,No,81.0,3501234567,ok
+V055,55,2026-04-28,Smartwatch,Tecnologia,1,560000,560000,Online,Tarjeta,Alvaro Y,41.0,Medellin,Alvaro.Y@Mail.Com,2026-05-13,4100000.0,Si,88.0,3512345678,ok
+V056,56,2026-04-28,Soporte Portatil,Accesorios,1,48000,48000,Online,Efectivo,Bianca Z,24.0,Bogota,Bianca.Z@Mail.Com,2026-05-15,2400000.0,No,90.0,3523456789,ok
+V057,57,2026-04-29,Microfono USB,Tecnologia,1,230000,230000,Tienda,Transferencia,Cesar Aa,35.0,Cali,Cesar.Aa@Mail.Com,2026-05-17,3500000.0,Si,84.0,3534567890,ok
+V058,58,2026-04-29,Silla Gamer,Hogar,1,890000,890000,Online,Tarjeta,Diana Ab,30.0,Medellin,Diana.Ab@Mail.Com,2026-05-19,3000000.0,No,87.0,3545678901,ok
+V059,59,2026-04-30,Cuaderno Ejecutivo,Papeleria,1,34000,34000,Tienda,Efectivo,Elkin Ac,28.0,Bogota,Elkin.Ac@Mail.Com,2026-05-21,2800000.0,Si,89.0,3556789012,ok
+V060,60,2026-04-30,Laptop Stand,Accesorios,1,95000,95000,Online,Efectivo,Fabiana Ad,32.0,Cali,Fabiana.Ad@Mail.Com,2026-05-23,3200000.0,No,86.0,3567890123,ok
+V061,3,2026-05-01,Webcam HD,Tecnologia,1,210000,210000,Online,Tarjeta,Camila Ruiz,29.0,Cali,Camila.Ruiz@Mail,2026/03/10,2800000.0,Si,95.0,3023456789,email invalido
+V062,10,2026-05-01,Audifonos Bluetooth,Tecnologia,1,220000,220000,Tienda,Efectivo,Pedro Salas,54.0,Pereira,Pedro.Salas@Mail.Com,2026-02-08,6700000.0,Si,101.0,3089012345,puntaje fuera de rango
+V063,21,2026-05-02,Mouse Inalambrico,Tecnologia,1,65000,65000,Online,Tarjeta,Paula Arias,26.0,Cali,Paula.Arias@Mail.Com,2026-02-15,2900000.0,Si,92.0,3112345678,registro duplicado
+V064,35,2026-05-02,Cuaderno Pack x5,Papeleria,1,28000,28000,Tienda,Efectivo,Gloria E,50.0,Cucuta,Gloria.E@Mail.Com,2026-04-03,5000000.0,Si,91.0,3323456789,ok
+V065,47,2026-05-03,Cargador Rapido,Tecnologia,2,70000,140000,Online,Transferencia,Sergio Q,36.0,Cali,Sergio.Q@Mail.Com,2026-04-27,3600000.0,Si,90.0,3434567890,ok
+V066,52,2026-05-03,Power Bank 10000mAh,Tecnologia,1,110000,110000,Tienda,Tarjeta,Ximena V,23.0,Medellin,Ximena.V@Mail.Com,2026-05-07,2300000.0,No,92.0,3489012345,ok
+V067,58,2026-05-04,Lampara LED,Hogar,3,39000,117000,Online,Efectivo,Diana Ab,30.0,Medellin,Diana.Ab@Mail.Com,2026-05-19,3000000.0,No,87.0,3545678901,ok
+V068,60,2026-05-04,Marcadores Pack x12,Papeleria,2,26000,52000,Tienda,Efectivo,Fabiana Ad,32.0,Cali,Fabiana.Ad@Mail.Com,2026-05-23,3200000.0,No,86.0,3567890123,ok

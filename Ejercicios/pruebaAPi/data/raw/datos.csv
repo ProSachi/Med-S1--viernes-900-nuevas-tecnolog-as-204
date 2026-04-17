@@ -1,0 +1,4 @@
+name,correo,tipoDocument,edad,genero,pais,estaActivo,id
+7343,9294,tipoDocument 1,44,9906,6295,False,1
+8821,1102,tipoDocument 2,25,4412,3301,True,2
+1054,7732,tipoDocument 1,30,9906,6295,False,3
