@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Arquitectura: React -> Spring Boot -> FastAPI</title>
+    <style>
+        :root {
+            --react: #61DAFB;
+            --spring: #6DB33F;
+            --python: #FFD43B;
+            --bg: #1e1e1e;
+            --text: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        h2 { margin-bottom: 10px; }
+        .subtitle { color: #888; margin-bottom: 30px; font-size: 0.9rem; }
+
+        .architecture-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: 900px;
+            position: relative;
+            margin-bottom: 40px;
+        }
+
+        .node {
+            width: 220px;
+            height: 180px;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            position: relative;
+            z-index: 2;
+            background-color: #2d2d2d;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .node h3 { margin: 0 0 10px 0; font-size: 1.2rem; }
+        .node .port { font-size: 0.8rem; background: rgba(0,0,0,0.3); padding: 3px 8px; border-radius: 10px; margin-bottom: 10px; }
+        .node .status { font-size: 0.9rem; font-weight: bold; min-height: 40px; }
+
+        #node-react { border-color: var(--react); }
+        #node-spring { border-color: var(--spring); }
+        #node-python { border-color: var(--python); }
+
+        .active-node {
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+            transform: scale(1.05);
+        }
+
+        /* Camino (Líneas conectadas) */
+        .path {
+            position: absolute;
+            top: 50%;
+            height: 4px;
+            background-color: #444;
+            z-index: 1;
+        }
+        .path-1 { left: 220px; right: 50%; margin-right: 110px; }
+        .path-2 { left: 50%; margin-left: 110px; right: 220px; }
+
+        /* Paquete de Datos Animado */
+        .packet {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            border-radius: 50%;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 3;
+            opacity: 0;
+            transition: left 1s ease-in-out, opacity 0.2s;
+        }
+
+        button {
+            padding: 12px 24px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #1e1e1e;
+            background-color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        button:hover { background-color: #dddddd; }
+        button:disabled { background-color: #555; cursor: not-allowed; }
+
+        #log-panel {
+            width: 100%;
+            max-width: 900px;
+            background: #000;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: monospace;
+            color: #00ff00;
+            height: 150px;
+            overflow-y: auto;
+        }
+        .log-entry { margin-bottom: 5px; }
+    </style>
+</head>
+<body>
+
+    <h2>Diagrama de Flujo: Microservicio Analítico</h2>
+    <div class="subtitle">Arquitectura Orquestada (BFF)</div>
+
+    <div class="architecture-container">
+        <div id="packet" class="packet"></div>
+        
+        <div class="path path-1"></div>
+        <div class="path path-2"></div>
+
+        <div class="node" id="node-react">
+            <h3 style="color: var(--react)">React</h3>
+            <div class="port">Frontend (:3000)</div>
+            <div class="status" id="status-react">Esperando usuario...</div>
+        </div>
+
+        <div class="node" id="node-spring">
+            <h3 style="color: var(--spring)">Spring Boot</h3>
+            <div class="port">API Gateway (:8080)</div>
+            <div class="status" id="status-spring">Escuchando peticiones...</div>
+        </div>
+
+        <div class="node" id="node-python">
+            <h3 style="color: var(--python)">FastAPI</h3>
+            <div class="port">Motor Analítico (:8000)</div>
+            <div class="status" id="status-python">Inactivo</div>
+        </div>
+    </div>
+
+    <button id="btn-simular" onclick="iniciarSimulacion()">Simular Petición de Gráfico</button>
+
+    <div style="width: 100%; max-width: 900px; margin-top: 20px;">
+        <h3 style="margin-bottom: 10px;">Consola de Red</h3>
+        <div id="log-panel"></div>
+    </div>
+
+    <script>
+        const statuses = {
+            react: document.getElementById('status-react'),
+            spring: document.getElementById('status-spring'),
+            python: document.getElementById('status-python')
+        };
+        const packet = document.getElementById('packet');
+        const btn = document.getElementById('btn-simular');
+        const logger = document.getElementById('log-panel');
+
+        function logInfo(message) {
+            const time = new Date().toLocaleTimeString();
+            logger.innerHTML += `<div class="log-entry">[${time}] ${message}</div>`;
+            logger.scrollTop = logger.scrollHeight;
+        }
+
+        function setActive(nodeId, active) {
+            const node = document.getElementById(`node-${nodeId}`);
+            if(active) node.classList.add('active-node');
+            else node.classList.remove('active-node');
+        }
+
+        async function iniciarSimulacion() {
+            btn.disabled = true;
+            logger.innerHTML = ''; // Limpiar logs
+            logInfo("--- INICIO DE TRAZA HTTP ---");
+
+            // Paso 1: React inicia petición
+            setActive('react', true);
+            statuses.react.innerHTML = "Ejecutando fetch('/api/grafico')";
+            logInfo("REACT: Petición GET enviada a localhost:8080");
+            
+            // Animación de React a Spring
+            packet.style.opacity = 1;
+            packet.style.left = "10%";
+            packet.style.backgroundColor = "#61DAFB";
+            
+            await sleep(500);
+            packet.style.left = "50%"; // Mover a Spring Boot
+            
+            await sleep(1000);
+            setActive('react', false);
+            setActive('spring', true);
+            statuses.react.innerHTML = "Esperando respuesta...";
+            statuses.spring.innerHTML = "Validando Seguridad.<br>Haciendo GET a Python.";
+            logInfo("SPRING BOOT: Token JWT validado. Usuario autorizado.");
+            logInfo("SPRING BOOT: Llamando a microservicio interno localhost:8000...");
+
+            // Animación de Spring a Python
+            packet.style.backgroundColor = "#6DB33F";
+            
+            await sleep(1000);
+            packet.style.left = "88%"; // Mover a Python
+            
+            await sleep(1000);
+            setActive('spring', false);
+            setActive('python', true);
+            statuses.spring.innerHTML = "Esperando cálculos...";
+            statuses.python.innerHTML = "Calculando en Pandas...<br>Generando BytesIO()";
+            logInfo("FASTAPI: Recibiendo petición. Ejecutando agrupaciones matemáticas.");
+            
+            await sleep(1500);
+            statuses.python.innerHTML = "Codificando a Base64.<br>Retornando JSON.";
+            logInfo("FASTAPI: Lienzo de Matplotlib convertido a Base64.");
+            logInfo("FASTAPI: Respondiendo 200 OK a Spring Boot.");
+
+            // Animación de retorno (Python a Spring)
+            packet.style.backgroundColor = "#FFD43B";
+            packet.style.left = "50%";
+            
+            await sleep(1000);
+            setActive('python', false);
+            setActive('spring', true);
+            statuses.python.innerHTML = "Memoria RAM liberada.";
+            statuses.spring.innerHTML = "JSON recibido.<br>Enviando a React.";
+            logInfo("SPRING BOOT: Respuesta analítica interceptada con éxito.");
+            
+            // Animación de retorno (Spring a React)
+            packet.style.backgroundColor = "#6DB33F";
+            
+            await sleep(1000);
+            packet.style.left = "10%";
+            
+            await sleep(1000);
+            setActive('spring', false);
+            setActive('react', true);
+            packet.style.opacity = 0;
+            statuses.spring.innerHTML = "Escuchando peticiones...";
+            statuses.react.innerHTML = "Renderizando <br>&lt;img src='base64'&gt;";
+            logInfo("REACT: Datos recibidos. Actualizando Virtual DOM con gráfico.");
+            logInfo("--- FIN DE LA TRAZA HTTP ---");
+
+            await sleep(2000);
+            setActive('react', false);
+            statuses.react.innerHTML = "Esperando usuario...";
+            btn.disabled = false;
+        }
+
+        function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+    </script>
+</body>
+</html>
